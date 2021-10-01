@@ -7,7 +7,7 @@ const NavMenuStyles = styled.div`
   z-index: 100;
   top: 0;
   left: 0;
-  width: 100%auto;
+  width: 100%;
   padding: 1rem 0;
   background: var(--dark-bg);
   ul {
@@ -20,12 +20,19 @@ const NavMenuStyles = styled.div`
       border-radius: 8px;
       transition: 0.3s ease background-color;
       &:hover {
-        background-color: var(--deep-black);
+        background-color: var(--deep-dark);
       }
     }
     a {
       display: inline-block;
       font-family: 'RobotoMono Regular';
+      padding: 1rem 2rem;
+      font-size: 2rem;
+      color: var(--gray-1);
+      outline: none;
+    }
+    .active {
+      color: var(--white);
     }
   }
 `;
@@ -35,7 +42,9 @@ export default function NavMenu() {
     <NavMenuStyles>
       <ul>
         <li>
-          <NavLink to="/">Home</NavLink>
+          <NavLink to="/" exact>
+            Home
+          </NavLink>
         </li>
         <li>
           <NavLink to="/about">About</NavLink>
