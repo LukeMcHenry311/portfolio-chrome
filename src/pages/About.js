@@ -4,9 +4,13 @@ import PText from '../components/PText';
 import Button from '../components/Button';
 import AboutImg from '../assets/images/about-image-two.png';
 import AboutInfoItem from '../components/AboutInfoItem';
+import ContactBanner from '../components/ContactBanner';
 
 const AboutPageStyles = styled.div`
   padding: 20rem 0 10rem 0;
+  .button {
+    font-size: 1.5rem;
+  }
   .top-section {
     display: flex;
     align-items: center;
@@ -43,6 +47,32 @@ const AboutPageStyles = styled.div`
       border: 2px solid var(--gray-1);
     }
   }
+  .about__info__items {
+    margin-top: 15rem;
+  }
+  .about__info__item {
+    margin-bottom: 10rem;
+  }
+  .about__info__heading {
+    font-size: 3.6rem;
+    text-transform: uppercase;
+  }
+  @media only screen and (max-width: 768px) {
+    padding: 10rem 0;
+    .top-section {
+      flex-direction: column;
+      gap: 5rem;
+    }
+    .about__subheading {
+      font-size: 1.8rem;
+    }
+    .about__heading {
+      font-size: 2.8rem;
+    }
+    .about__info__heading {
+      font-size: 3rem;
+    }
+  }
 `;
 
 export default function About() {
@@ -60,7 +90,7 @@ export default function About() {
                 I am from Lehi, Utah. A fast growing state in America. I've
                 always enjoyed art and design, I feel that incorporating modern
                 and unique style idea's to a website can make all the difference
-                of a website.
+                of an application.
                 <br /> <br />I started coding 6 months ago. I believe that
                 Coding is an art. I love impressing both peers and
                 non-programmers with what i write.
@@ -79,10 +109,44 @@ export default function About() {
         <div className="about__info__items">
           <div className="about__info__item">
             <h1 className="about__info__heading">Education</h1>
-            <AboutInfoItem />
+            <AboutInfoItem
+              title="School"
+              items={['Lehi High High School, Utah.']}
+            />
+            <AboutInfoItem
+              title="College"
+              items={['University of Utah coding bootcamp']}
+            />
+          </div>
+        </div>
+        <div className="about__info__items">
+          <div className="about__info__item">
+            <h1 className="about__info__heading">Skills</h1>
+            <AboutInfoItem
+              title="Frontend"
+              items={['HTML', 'CSS', 'Javascript', 'React']}
+            />
+            <AboutInfoItem
+              title="Backend"
+              items={['Node', 'Express', 'Queries']}
+            />
+          </div>
+        </div>
+        <div className="about__info__items">
+          <div className="about__info__item">
+            <h1 className="about__info__heading">Other Interests</h1>
+            <AboutInfoItem
+              title="Fitness"
+              items={['Parkour', 'Running', 'Hiking']}
+            />
+            <AboutInfoItem
+              title="Gaming"
+              items={['World of Warcraft', 'Diablo 3', 'Starcraft']}
+            />
           </div>
         </div>
       </div>
+      <ContactBanner />
     </AboutPageStyles>
   );
 }
