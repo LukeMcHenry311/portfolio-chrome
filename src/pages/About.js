@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import PText from '../components/PText';
 import Button from '../components/Button';
 import AboutImg from '../assets/images/about-image-two.png';
+import AboutInfoItem from '../components/AboutInfoItem';
 
 const AboutPageStyles = styled.div`
   padding: 20rem 0 10rem 0;
@@ -78,6 +79,7 @@ export default function About() {
         <div className="about__info__items">
           <div className="about__info__item">
             <h1 className="about__info__heading">Education</h1>
+            <AboutInfoItem />
           </div>
         </div>
       </div>
