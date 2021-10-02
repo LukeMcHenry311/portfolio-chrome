@@ -1,9 +1,15 @@
 import React from 'react';
+import styled from 'styled-components';
+import ProjectsSection from '../components/ProjectsSection';
+
+const ProjectsStyles = styled.div`
+  padding: 3rem 0;
+`;
 
 export default function Projects() {
   return (
-    <div>
-      <h1>This is Projects Page</h1>
-    </div>
+    <ProjectsStyles>
+      <ProjectsSection />
+    </ProjectsStyles>
   );
 }
