@@ -15,7 +15,7 @@ export default function PText({ children }) {
   // eslint-disable-next-line react/destructuring-assignment
   console.log(children);
   return (
-    <PStyle>
+    <PStyle className="para">
       <p>{children}</p>
     </PStyle>
   );

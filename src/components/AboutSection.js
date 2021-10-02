@@ -1,16 +1,52 @@
 import React from 'react';
+import styled from 'styled-components';
 import Button from './Button';
 import PText from './PText';
 import SectionTitle from './SectionTitle';
-import AboutImg from '../assets/images/about-image-one.png';
+import AboutImg from '../assets/images/about-lingo.png';
+
+const AboutSectionStyle = styled.div`
+  padding: 10 rem 0;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+  }
+  .aboutSection__left,
+  .aboutSection__right {
+    flex: 1;
+  }
+  .section-title {
+    text-align: left;
+  }
+  .para {
+    margin-top: 2rem;
+    margin-left: 0;
+  }
+  .aboutSection__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  @media only scren and (max-width: 950px) {
+    .aboutSection__left {
+      flex: 4;
+    }
+    .aboutSection__right {
+      flex: 3;
+    }
+  }
+`;
 
 export default function AboutSection() {
   return (
-    <div>
+    <AboutSectionStyle>
       <div className="container">
         <div className="aboutSection__left">
           <SectionTitle
-            className="section-title"
             subheading="Please allow me to introduce myself 😛"
             heading="about me"
           />
@@ -21,13 +57,13 @@ export default function AboutSection() {
           </PText>
           <div className="aboutSection__buttons">
             <Button btnLink="/projects" btnText="Projects" />
-            <Button btnLink="./about" btnText="Read More" />
+            <Button btnLink="./about" btnText="Read More" outline />
           </div>
         </div>
         <div className="aboutSection__Right">
           <img src={AboutImg} alt="" />
         </div>
       </div>
-    </div>
+    </AboutSectionStyle>
   );
 }
