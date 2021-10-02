@@ -42,6 +42,10 @@ const ProjectItemStyle = styled.div`
     .projectItem__img {
       height: 350px;
     }
+    .projectItem_links {
+      font-size: 10px;
+      margin-left: 2rem;
+    }
   }
 `;
 
