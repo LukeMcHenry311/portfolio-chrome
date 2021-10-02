@@ -25,7 +25,11 @@ export default function HeroSection() {
             I am looking for a career in web development. I enjoy learning new
             things and becoming the best programmer I can be.
           </PText>
-          <Button btnLink="/projects" btnText="see my projects" />
+          <Button
+            btnLink="/projects"
+            btnText="see my projects"
+            outline={false}
+          />
         </div>
       </div>
     </div>
