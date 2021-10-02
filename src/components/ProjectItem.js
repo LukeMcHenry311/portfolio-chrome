@@ -29,6 +29,15 @@ const ProjectItemStyle = styled.div`
     font-family: 'RobotoMono Regular';
     margin-top: 1rem;
   }
+  .projectItem_links {
+    font-size: 20px;
+    justify-content: space-between;
+    margin-left: 18rem;
+    text-decoration: underline;
+  }
+  .projectItem_linkone {
+    margin-right: 3rem;
+  }
   @media only screen and (max-width: 768px) {
     .projectItem__img {
       height: 350px;
@@ -36,17 +45,38 @@ const ProjectItemStyle = styled.div`
   }
 `;
 
-export default function ProjectItem() {
+export default function ProjectItem({
+  img = ProjOne,
+  title = 'Project Name',
+  desc = 'blah blah blah',
+  link1 = 'beep',
+  link2 = 'boop',
+}) {
   return (
     <ProjectItemStyle>
       <Link to="/projects" className="projectItem__img">
-        <img src={ProjOne} alt="project" />
+        <img src={img} alt="project" />
       </Link>
       <div className="projectItem__info">
         <Link to="#">
-          <h3 className="projectItem__title">Project 1</h3>
+          <h3 className="projectItem__title">{title}</h3>
         </Link>
-        <p className="projectItem__desc">Lorem ipsum</p>
+        <div className="github-container">
+          <p className="projectItem__desc">{desc}</p>
+          <div className="projectItem_links">
+            <a
+              href={link1}
+              target="_blank"
+              rel="noreferrer"
+              className="projectItem_linkone"
+            >
+              GitHub
+            </a>
+            <a href={link2} target="_blank" rel="noreferrer">
+              Deployed
+            </a>
+          </div>
+        </div>
       </div>
     </ProjectItemStyle>
   );

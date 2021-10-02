@@ -20,6 +20,39 @@ const ProjectSectionStyle = styled.div`
     padding-top: 8rem;
     max-width: 100%;
   }
+  .swiper-button-prev,
+  .swiper-button-next {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: var(--deep-dark);
+    z-index: 10;
+    right: 60px;
+    left: auto;
+    top: 0;
+    transform: translateY(50%);
+    color: var(--gray-1);
+    border-radius: 8px;
+  }
+  .swiper-button-next {
+    right: 0;
+  }
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    font-size: 2rem;
+  }
+  @media only screen and (max-width: 768px) {
+    .projects__allItems {
+      flex-direction: column;
+      max-width: 400px;
+      margin: 0 auto;
+      margin-top: 7rem;
+      gap: 5rem;
+      .projectItem__img {
+        width: 100%;
+      }
+    }
+  }
 `;
 
 export default function ProjectsSection() {
@@ -31,12 +64,39 @@ export default function ProjectsSection() {
           subheading="swipe through some of my recent work"
         />
         <div className="projects__allItems">
-          <Swiper spaceBetween={30} slidesPerView={2} navigation>
+          <Swiper
+            spaceBetween={30}
+            slidesPerView={1}
+            navigation
+            breakpoints={{
+              // when resolution is 640 or lower than it is 1 slides per view and so on.
+              640: {
+                slidesPerView: 1,
+              },
+              // when resolution is 768 or lower than it is 2 slides per view.
+              768: {
+                slidesPerView: 2,
+              },
+              // when resolution is 1200 or lower than it is 2 slides per view.
+              1200: {
+                slidesPerView: 2,
+              },
+              2000: {
+                slidesPerView: 2,
+              },
+            }}
+          >
             {projects.map((project, index) => {
               if (index >= 5) return;
               return (
                 <SwiperSlide key={project.id}>
-                  <ProjectItem />
+                  <ProjectItem
+                    title={project.name}
+                    img={project.img}
+                    desc={project.desc}
+                    link1={project.link1}
+                    link2={project.link2}
+                  />
                 </SwiperSlide>
               );
             })}
