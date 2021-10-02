@@ -107,7 +107,7 @@ const HeroStyles = styled.div`
       height: 300px;
     }
     .hero__info {
-      margin-top: 3rem;
+      margin-top: 0.5rem;
     }
     .hero__social {
       left: 0px;

@@ -39,6 +39,35 @@ const AboutSectionStyle = styled.div`
       flex: 3;
     }
   }
+  @media only screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      text-align: center;
+    }
+    .aboutSection__left,
+    .aboutSection__right {
+      width: 100%;
+    }
+    .aboutSection__right {
+      margin-top: 3rem;
+    }
+    .section-title {
+      text-align: center;
+    }
+    .para {
+      margin: 0 auto;
+      margin-top: 2rem;
+    }
+    .aboutSection__buttons {
+      flex-direction: column;
+      gap: 0;
+      .button-wrapper,
+      a {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
 `;
 
 export default function AboutSection() {
