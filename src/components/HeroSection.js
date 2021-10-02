@@ -36,12 +36,11 @@ const HeroStyles = styled.div`
     width: 100%;
     height: 800px;
     margin: 0 auto;
-    border: 2px solid var(--gray-1);
+    border: 2px solid var(--white);
   }
   .hero__info {
-    margin-top: -15rem;
-    font-size: 1.2rem;
-    color: #f5ed00;
+    margin-top: -16rem;
+    font-size: 1.5rem;
   }
   .hero__social,
   .hero__scrollDown {
