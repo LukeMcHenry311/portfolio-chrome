@@ -9,7 +9,7 @@
 * [Struggles](#struggles)
 
 ## Screenshot
-![Screenshot 2021-09-23 190537](https://user-images.githubusercontent.com/82482629/134603058-23137445-78c8-45c4-8efa-71b153562947.png)
+![screenshott](https://user-images.githubusercontent.com/82482629/135743012-da25b9e9-6d32-4fdd-a1b3-d067f65ed3a3.png)
 ## Description
 application using inquirer to build team portfolio dynamically
 ## Technologies
