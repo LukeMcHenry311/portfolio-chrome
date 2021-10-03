@@ -1,10 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 import PText from '../components/PText';
-import Button from '../components/Button';
+// import Button from '../components/Button';
 import AboutImg from '../assets/images/about-image-two.png';
 import AboutInfoItem from '../components/AboutInfoItem';
 import ContactBanner from '../components/ContactBanner';
+import Resume from '../assets/images/_Resume.png';
 
 const AboutPageStyles = styled.div`
   padding: 20rem 0 10rem 0;
@@ -57,6 +58,20 @@ const AboutPageStyles = styled.div`
     font-size: 3.6rem;
     text-transform: uppercase;
   }
+  .resume {
+    font-size: 1.5rem;
+    background-color: var(--deep-dark);
+    padding: 0.7em 2em;
+    border-radius: 8px;
+    display: inline-block;
+    border: 2px solid var(--gray-1);
+  }
+  .resume:hover {
+    background-color: var(--white);
+    color: var(--deep-dark);
+    transform: scale(1.3) rotate(5deg);
+    transition: 0.4s;
+  }
   @media only screen and (max-width: 768px) {
     padding: 10rem 0;
     .top-section {
@@ -100,7 +115,12 @@ export default function About() {
                 see myself starting my own website.
               </PText>
             </div>
-            <Button btnText="Resume" btnLink="#" />
+            <a className="resume" href={Resume} download>
+              Download Resume Here
+            </a>
+            {/* <a href={Resume} download>
+              <img src={Resume} alt="" width="100" height="142" />
+            </a> */}
           </div>
           <div className="right">
             <img src={AboutImg} alt="Luke McHenry" />
