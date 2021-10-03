@@ -33,8 +33,9 @@ https://lukemchenry311.github.io/portfolio-chrome/
 ## Collaborations
 
 StackOverflow, Classmates, ASKBCS, Office Hours.
-Youtoube - i followed a guide by web cifar, a youtube series. Although i did add some of my own code just to fulfill the requirements of the project. Below I will link all youtube videos I watched for this portfolio. Also I'd like to make it clear that although i followed the guide, I ommitted what was not necessary and wrote my own code for what was required. 0. https://www.youtube.com/watch?v=esC2k9z7w2U&t=1s
+Youtoube - i followed a guide by web cifar, a youtube series. Although i did add some of my own code just to fulfill the requirements of the project. Below I will link all youtube videos I watched for this portfolio. Also I'd like to make it clear that although i followed the guide, I ommitted what was not necessary and wrote my own code for what was required.
 
+0. https://www.youtube.com/watch?v=esC2k9z7w2U&t=1s
 1. https://www.youtube.com/watch?v=w8NSgfHfLug
 2. https://www.youtube.com/watch?v=bJN34yW4lBI
 3. https://www.youtube.com/watch?v=7HDR1OAw0Ts
