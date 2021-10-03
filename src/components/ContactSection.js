@@ -34,7 +34,7 @@ const ContactSectionStyle = styled.div`
     border-radius: 12px;
   }
   @media only screen and (max-width: 768px) {
-    ..contactSection__wrapper {
+    .contactSection__wrapper {
       flex-direction: column;
     }
     .contactSection__wrapper::after {
