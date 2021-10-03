@@ -45,7 +45,10 @@ export default function ContactForm() {
   const [message, setMessage] = useState('');
   return (
     <div>
-      <FormStyle>
+      <FormStyle
+        action="https://formsubmit.co/lukemchenry311@gmail.com"
+        method="POST"
+      >
         <div className="form-group">
           <label htmlFor="name">
             Your Name
