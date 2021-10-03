@@ -111,7 +111,7 @@ export default function About() {
                 non-programmers with what i write.
                 <br /> <br />
                 My vision is to become very proficient in react, in the long
-                term I want to get a entry-level job programming. In 5 years I
+                term I want to get an entry-level job programming. In 5 years I
                 see myself starting my own website.
               </PText>
             </div>
@@ -156,8 +156,8 @@ export default function About() {
           <div className="about__info__item">
             <h1 className="about__info__heading">Other Interests</h1>
             <AboutInfoItem
-              title="Fitness"
-              items={['Parkour', 'Running', 'Hiking']}
+              title="Movies"
+              items={['Lord of the Rings', 'John Wick', 'Blackfish']}
             />
             <AboutInfoItem
               title="Gaming"
