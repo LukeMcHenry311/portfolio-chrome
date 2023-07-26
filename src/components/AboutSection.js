@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Button from './Button';
 import PText from './PText';
 import SectionTitle from './SectionTitle';
-import AboutImg from '../assets/images/about-lingo.png';
+import AboutImg from '../assets/images/about--image-grah.png';
 
 const AboutSectionStyle = styled.div`
   padding: 10 rem 0;
@@ -16,6 +16,11 @@ const AboutSectionStyle = styled.div`
   .aboutSection__left,
   .aboutSection__right {
     flex: 1;
+  }
+  .aboutSection__Right img {
+    max-width: 100%;
+    width: 30vw;
+    height: 30vw;
   }
   .section-title {
     text-align: left;

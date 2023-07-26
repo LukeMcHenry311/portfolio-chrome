@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import './PText.css';
 
 const PStyle = styled.div`
   max-width: 500px;
@@ -11,11 +12,19 @@ const PStyle = styled.div`
   }
 `;
 
-export default function PText({ children }) {
-  // eslint-disable-next-line react/destructuring-assignment
+
+const PText = ({ children }) => {
+  const textStyle = {
+    color: 'black;',
+    fontSize: '16px',
+    // Add any other desired styles here
+  };
+
   return (
-    <PStyle className="para">
-      <p>{children}</p>
+    <PStyle className="para"> {/* Use the PStyle component */}
+      <p style={textStyle}>{children}</p>
     </PStyle>
   );
-}
+};
+
+export default PText;

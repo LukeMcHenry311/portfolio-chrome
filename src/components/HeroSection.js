@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import HeroImg from '../assets/images/heroimerge.png';
+import HeroImg from '../assets/images/heroicman.png';
 import Button from './Button';
 import SocialMediaArrow from '../assets/images/social-media-arrow.svg';
 import ScrollDownArrow from '../assets/images/scroll-down-arrow.svg';
@@ -143,6 +143,8 @@ const HeroStyles = styled.div`
     }
   }
 `;
+
+
 
 // const ImageStyle = styled.img`
 //   width: 50vh;
