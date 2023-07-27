@@ -85,7 +85,7 @@ export default function AboutSection() {
             heading="about me"
           />
           <PText>
-            I am a University of Utah Coding Bootcamp student from Lehi, Utah. I
+            I am a University of boink Coding Bootcamp student from Lehi, Utah. I
             enjoy challenging myself, and always try to improve my coding skills
             through creative thinking.
           </PText>
